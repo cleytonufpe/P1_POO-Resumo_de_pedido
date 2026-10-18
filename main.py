@@ -20,18 +20,23 @@ def calcular_subtotal(quantidade,preco_unitario):
 
 subtotal = calcular_subtotal(quantidade,preco_unitario)
 
+#função desconto
+
+def calcular_desconto(subtotal, cupom):
+
+    if cupom == "sim":
+        return subtotal/10 
+    if cupom == "nao":
+        return 0
+    return 0
+
 #desconto 
 
-desconto = 0
-
-if patterncupom == "sim":
-    desconto = subtotal/10
-if patterncupom == "nao":
-    desconto = 0
+descontototal = calcular_desconto(subtotal,patterncupom)
 
 #total
 
-total = subtotal - desconto
+total = subtotal - descontototal
 
 #classificação
 
@@ -45,4 +50,4 @@ else:
 
 #saida
 
-print("--- INFORMAÇÕES DO PEDIDO ---","\n Cliente:",nome,"\n Produto:",produto,"\n Quantidade:",quantidade,"\n Preço unitário:", preco_unitario,"\n Subtotal:",subtotal,"\n Desconto:",desconto,"\n Total:",total,"\n Classificação:",tipo_de_pedido)
+print("--- INFORMAÇÕES DO PEDIDO ---","\n Cliente:",nome,"\n Produto:",produto,"\n Quantidade:",quantidade,"\n Preço unitário:", preco_unitario,"\n Subtotal:",subtotal,"\n Desconto:",descontototal,"\n Total:",total,"\n Classificação:",tipo_de_pedido)
