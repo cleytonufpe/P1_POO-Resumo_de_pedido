@@ -10,9 +10,15 @@ cupom = "SIM"
 
 patterncupom = cupom.lower()
 
-#subtotal
+#função subtotal
 
-subtotal = quantidade * preco_unitario
+def calcular_subtotal(quantidade,preco_unitario):
+    subtotal = quantidade * preco_unitario
+    return subtotal
+
+#subtotal 
+
+subtotal = calcular_subtotal(quantidade,preco_unitario)
 
 #desconto 
 
