@@ -36,3 +36,7 @@ elif pedido <= 100:
     tipo_de_pedido = "Pedido médio" 
 else:
     tipo_de_pedido = "Pedido grande"
+
+#saida
+
+print("--- INFORMAÇÕES DO PEDIDO ---","\n Cliente:",nome,"\n Produto:",produto,"\n Quantidade:",quantidade,"\n Preço unitário:", preco_unitario,"\n Subtotal:",subtotal,"\n Desconto:",desconto,"\n Total:",total,"\n Classificação:",tipo_de_pedido)
