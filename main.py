@@ -26,3 +26,13 @@ if patterncupom == "nao":
 #total
 
 total = subtotal - desconto
+
+#classificação
+
+pedido = subtotal
+if pedido <= 30:
+    tipo_de_pedido = "Pedido pequeno"
+elif pedido <= 100:
+    tipo_de_pedido = "Pedido médio" 
+else:
+    tipo_de_pedido = "Pedido grande"
