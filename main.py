@@ -22,3 +22,7 @@ if patterncupom == "sim":
     desconto = subtotal/10
 if patterncupom == "nao":
     desconto = 0
+
+#total
+
+total = subtotal - desconto
