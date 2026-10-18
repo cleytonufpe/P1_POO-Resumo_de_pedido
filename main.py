@@ -38,15 +38,21 @@ descontototal = calcular_desconto(subtotal,patterncupom)
 
 total = subtotal - descontototal
 
-#classificação
+#função classificar
 
-pedido = subtotal
-if pedido <= 30:
-    tipo_de_pedido = "Pedido pequeno"
-elif pedido <= 100:
-    tipo_de_pedido = "Pedido médio" 
-else:
-    tipo_de_pedido = "Pedido grande"
+def classificar_pedido(subtotal):
+    pedido = subtotal
+    if pedido <= 30:
+        tipo_de_pedido = "Pedido pequeno"
+    elif pedido <= 100:
+        tipo_de_pedido = "Pedido médio" 
+    else:
+        tipo_de_pedido = "Pedido grande"
+    return tipo_de_pedido
+
+#classe do pedido
+
+tipo_de_pedido = classificar_pedido(subtotal)
 
 #saida
 
