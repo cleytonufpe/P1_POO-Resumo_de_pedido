@@ -9,3 +9,7 @@ cupom = "SIM"
 #função lower
 
 patterncupom = cupom.lower()
+
+#subtotal
+
+subtotal = quantidade * preco_unitario
